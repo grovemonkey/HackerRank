@@ -1,9 +1,9 @@
-rom fractions import Fraction
+from fractions import Fraction
 from functools import reduce
 
 
 def product(fracs):
-    t = reduce(lambda numerator, denominator: numerator * denominator, fracs)
+    t = reduce(lambda numerator, denominator: numerator * denominator, fracs) # this was the best part so simple but effective
     return t.numerator, t.denominator
 
 
