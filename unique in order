@@ -1,0 +1,21 @@
+def unique_in_order(s):
+    
+    new_s = []
+    new_s.append(s[0])
+    for i, element in enumerate(s):
+        if i > 0 and s[i-1] != element:
+            new_s.append(element)
+    return print(new_s)
+    # for c in s:          
+    #     if len(new_s) == 0:
+    #         new_s += c
+    #         prev = c
+    #     if c == prev:
+    #         continue
+    #     else:
+    #         new_s += c
+    #         prev = c
+    # return print(new_s)
+
+unique_in_order([1,2,2,3,3])
+unique_in_order('AAAABBBCCDAABBB') 
